@@ -37,3 +37,104 @@
         }
     }
 }
+
+
+// Menu
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0.9;
+    visibility: hidden;
+
+    &.show {
+        visibility: visible;
+    }
+
+    // This adds '-portrait' and '-nav' to 'menu'
+    &-portrait,
+    &-nav {
+        display: flex;
+        // The main axis of the flexbox is vertical
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        float: left;
+        width: 50%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    // Nav side (right hand sight of the page)
+    &-nav {
+        margin: 0;
+        padding: 0;
+        background: darken($primary-color, 5);
+        list-style: none;
+        transform: translate3d(0, -100%, 0);
+        @include easeOut;
+
+        &.show {
+            // Come in from the top
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    // Portrait side (left hand sight of the page)
+    &-portrait {
+        background: $primary-color;
+        transform: translate3d(0, 100%, 0);
+        @include easeOut;
+
+        &.show {
+            // Come in from the bottom
+            transform: translate3d(0, 0, 0);
+        }
+
+        .portrait {
+            width: 250px;
+            height: 250px;
+            background: url('../img/portrait.jpg');
+            background-size: cover;
+            border-radius: 50%;
+            border: solid 3px $secondary-color;
+        }
+    }
+
+    .nav-item {
+        transform: translate3d(600px, 0, 0);
+        @include easeOut;
+
+        &.show {
+            // Come in from the right
+            transform: translate3d(0, 0, 0);
+        }
+
+        &.current>a {
+            color: $secondary-color;
+        }
+    }
+
+    .nav-link {
+        display: inline-block;
+        position: relative;
+        font-size: 30px;
+        text-transform: uppercase;
+        padding: 1rem 0;
+        font-weight: 300;
+        color: white;
+        text-decoration: none;
+        @include easeOut;
+
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+}
+
+// Delay each nav item by 0.1s
+@for $x from 1 through 4 {
+    .nav-item:nth-child(#{$x}) {
+        transition-delay: $x * 0.1s;
+    }
+}
