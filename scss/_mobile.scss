@@ -1,15 +1,16 @@
 // Extra-large screens
 @include mediaExtraLarge {
     .projects {
-        grid-template-columns: repeat(4, 1fr);
+        column-count: 3;
     }
+
 }
 
 
 // Large screens
 @include mediaLarge {
     .projects {
-        grid-template-columns: repeat(3, 1fr);
+        column-count: 3;
     }
 }
 
@@ -17,9 +18,11 @@
 
 // Medium screens
 @include mediaMedium {
+
     main {
         align-items: center;
         text-align: center;
+        padding: 3rem;
 
         .lg-heading {
             line-height: 1;
@@ -67,17 +70,64 @@
     }
 
     .projects {
-        grid-template-columns: repeat(2, 1fr);
+        column-count: 2;
     }
 }
 
 // Small screens
 @include mediaSmall {
+    .menu-btn {
+        right: 20px;
+        top: 20px;
+    }
+
+    main {
+        padding: 2rem;
+    }
+
     main #home h1 {
         margin-top: 10vh;
     }
 
+    h1,
+    h2,
+    h3 {
+        margin: 0;
+        font-weight: 400;
+
+        &.lg-heading {
+            font-size: 4rem;
+        }
+
+        &.sm-heading {
+            font-size: 1.5rem;
+        }
+
+    }
+
+    .about-info {
+
+        .bio-image {
+            margin: auto;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: $secondary-color 3px solid;
+        }
+
+        .bio {
+            font-size: 1rem;
+        }
+
+    }
+
     .projects {
-        grid-template-columns: 1fr;
+        column-count: 1;
+    }
+
+    // Contact page
+    .boxes div {
+        font-size: 1.2rem;
+        padding: 0.5rem 0.5rem;
     }
 }
