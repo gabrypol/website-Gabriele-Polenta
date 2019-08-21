@@ -315,24 +315,3 @@ main {
   .boxes div {
     font-size: 1.2rem;
     padding: 0.5rem 0.5rem; } }
-
-@media screen and (max-height: 500px) {
-  h1.lg-heading,
-  h2.lg-heading,
-  h3.lg-heading {
-    font-size: 4rem; }
-  .menu {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); }
-    .menu-portrait, .menu-nav {
-      height: 100vh; }
-    .menu-nav {
-      margin: 0;
-      padding: 0;
-      background: #0c0c0d;
-      list-style: none;
-      transform: translate3d(0, -100%, 0);
-      transition: all 0.5s ease-out; }
-    .menu .portrait {
-      width: 200px;
-      height: 200px; } }
