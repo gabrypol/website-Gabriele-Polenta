@@ -15,8 +15,12 @@ $background-opacity: 0.9;
 
         // This is working because the mixin 'background' has been placed in the body
         &#bg-img {
+
+            header {}
+
             background: $home-image;
             // Background doesn't scroll
+            overflow: hidden;
             background-attachment: fixed;
             background-size: cover;
 
@@ -49,6 +53,12 @@ $background-opacity: 0.9;
 // Media query mixin
 @mixin mediaSmall {
     @media screen and (max-width: 500px) {
+        @content;
+    }
+}
+
+@mixin mediaPortrait {
+    @media screen and (max-height: 500px) {
         @content;
     }
 }

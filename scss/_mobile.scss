@@ -15,7 +15,6 @@
 }
 
 
-
 // Medium screens
 @include mediaMedium {
 
@@ -129,5 +128,44 @@
     .boxes div {
         font-size: 1.2rem;
         padding: 0.5rem 0.5rem;
+    }
+}
+
+
+// Media potrait
+@include mediaPortrait {
+
+    h1,
+    h2,
+    h3 {
+        &.lg-heading {
+            font-size: 4rem;
+        }
+    }
+
+    .menu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        // This adds '-portrait' and '-nav' to 'menu'
+        &-portrait,
+        &-nav {
+            height: 100vh;
+        }
+
+        // Nav side (right hand sight of the page)
+        &-nav {
+            margin: 0;
+            padding: 0;
+            background: darken($primary-color, 5);
+            list-style: none;
+            transform: translate3d(0, -100%, 0);
+            @include easeOut;
+        }
+
+        .portrait {
+            width: 200px;
+            height: 200px;
+        }
     }
 }
