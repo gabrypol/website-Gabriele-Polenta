@@ -1,7 +1,7 @@
 // Extra-large screens
 @include mediaExtraLarge {
     .projects {
-        column-count: 3;
+        column-count: 2;
     }
 
 }
@@ -10,7 +10,7 @@
 // Large screens
 @include mediaLarge {
     .projects {
-        column-count: 3;
+        column-count: 2;
     }
 }
 
