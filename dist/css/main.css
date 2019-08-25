@@ -128,7 +128,7 @@ h3 {
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     padding: 0.2rem 1rem;
     background: rgba(30, 29, 31, 0.5); }
 
@@ -171,13 +171,25 @@ main {
     border: #479761 3px solid; }
   .about-info .bio {
     grid-area: bio;
-    font-size: 1.5rem; }
+    font-size: 1rem; }
   .about-info .job-1 {
-    grid-area: job1; }
+    grid-area: job1;
+    font-size: 0.8rem; }
+    .about-info .job-1 h3, .about-info .job-1 h4, .about-info .job-1 h5, .about-info .job-1 h6 {
+      margin-block-start: 0;
+      margin-block-end: 0.5em; }
   .about-info .job-2 {
-    grid-area: job2; }
+    grid-area: job2;
+    font-size: 0.8rem; }
+    .about-info .job-2 h3, .about-info .job-2 h4, .about-info .job-2 h5, .about-info .job-2 h6 {
+      margin-block-start: 0;
+      margin-block-end: 0.5em; }
   .about-info .job-3 {
-    grid-area: job3; }
+    grid-area: job3;
+    font-size: 0.8rem; }
+    .about-info .job-3 h3, .about-info .job-3 h4, .about-info .job-3 h5, .about-info .job-3 h6 {
+      margin-block-start: 0;
+      margin-block-end: 0.5em; }
   .about-info .job {
     background: #262427;
     padding: 0.5rem;
