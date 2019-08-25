@@ -171,29 +171,26 @@ main {
     border: #479761 3px solid; }
   .about-info .bio {
     grid-area: bio;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    text-align: left; }
   .about-info .job-1 {
     grid-area: job1;
     font-size: 0.9rem; }
-    .about-info .job-1 h3, .about-info .job-1 h4, .about-info .job-1 h5, .about-info .job-1 h6 {
-      margin-block-start: 0;
-      margin-block-end: 0.5em; }
   .about-info .job-2 {
     grid-area: job2;
     font-size: 0.9rem; }
-    .about-info .job-2 h3, .about-info .job-2 h4, .about-info .job-2 h5, .about-info .job-2 h6 {
-      margin-block-start: 0;
-      margin-block-end: 0.5em; }
   .about-info .job-3 {
     grid-area: job3;
     font-size: 0.9rem; }
-    .about-info .job-3 h3, .about-info .job-3 h4, .about-info .job-3 h5, .about-info .job-3 h6 {
-      margin-block-start: 0;
-      margin-block-end: 0.5em; }
   .about-info .job {
     background: #262427;
-    padding: 0.5rem;
-    border-bottom: #479761 5px solid; }
+    padding: 0.9rem;
+    border-bottom: #479761 5px solid;
+    text-align: left; }
+    .about-info .job h1, .about-info .job h2, .about-info .job h3, .about-info .job h4, .about-info .job h5, .about-info .job h6 {
+      font-weight: 600;
+      margin-block-start: 0;
+      margin-block-end: 0.4rem; }
 
 .projects {
   column-gap: 30px; }
