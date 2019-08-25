@@ -250,11 +250,11 @@ main {
 
 @media screen and (min-width: 1171px) {
   .projects {
-    column-count: 2; } }
+    column-count: 3; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    column-count: 2; } }
+    column-count: 3; } }
 
 @media screen and (max-width: 768px) {
   main {
