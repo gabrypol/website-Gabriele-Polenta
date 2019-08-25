@@ -175,13 +175,13 @@ main {
     text-align: left; }
   .about-info .job-1 {
     grid-area: job1;
-    font-size: 0.9rem; }
+    font-size: 1rem; }
   .about-info .job-2 {
     grid-area: job2;
-    font-size: 0.9rem; }
+    font-size: 1rem; }
   .about-info .job-3 {
     grid-area: job3;
-    font-size: 0.9rem; }
+    font-size: 1rem; }
   .about-info .job {
     background: #262427;
     padding: 0.9rem;
