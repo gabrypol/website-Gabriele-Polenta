@@ -174,19 +174,19 @@ main {
     font-size: 1rem; }
   .about-info .job-1 {
     grid-area: job1;
-    font-size: 0.8rem; }
+    font-size: 0.85rem; }
     .about-info .job-1 h3, .about-info .job-1 h4, .about-info .job-1 h5, .about-info .job-1 h6 {
       margin-block-start: 0;
       margin-block-end: 0.5em; }
   .about-info .job-2 {
     grid-area: job2;
-    font-size: 0.8rem; }
+    font-size: 0.85rem; }
     .about-info .job-2 h3, .about-info .job-2 h4, .about-info .job-2 h5, .about-info .job-2 h6 {
       margin-block-start: 0;
       margin-block-end: 0.5em; }
   .about-info .job-3 {
     grid-area: job3;
-    font-size: 0.8rem; }
+    font-size: 0.85rem; }
     .about-info .job-3 h3, .about-info .job-3 h4, .about-info .job-3 h5, .about-info .job-3 h6 {
       margin-block-start: 0;
       margin-block-end: 0.5em; }
