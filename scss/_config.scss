@@ -54,7 +54,7 @@ $background-opacity: 0.9;
     }
 }
 
-@mixin mediaPortrait {
+@mixin mediaLandscape {
     @media screen and (max-height: 500px) {
         @content;
     }
