@@ -98,39 +98,34 @@ main {
     .bio {
         grid-area: bio;
         font-size: 1.5rem;
+        text-align: left;
     }
-
+    
     .job-1 {
         grid-area: job1;
         font-size: 0.9rem;
-        h3, h4, h5, h6 {
-            margin-block-start: 0;
-            margin-block-end: 0.5em;
-        }
     }
 
     .job-2 {
         grid-area: job2;
         font-size: 0.9rem;
-        h3, h4, h5, h6 {
-            margin-block-start: 0;
-            margin-block-end: 0.5em;
-        }
     }
 
     .job-3 {
         grid-area: job3;
         font-size: 0.9rem;
-        h3, h4, h5, h6 {
-            margin-block-start: 0;
-            margin-block-end: 0.5em;
-        }
     }
 
     .job {
         background: lighten($primary-color, 5);
-        padding: 0.5rem;
+        padding: 0.9rem;
         border-bottom: $secondary-color 5px solid;
+        text-align: left;
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 600;
+            margin-block-start: 0;
+            margin-block-end: 0.4rem;
+        }
     }
 }
 
