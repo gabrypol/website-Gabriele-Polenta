@@ -18,17 +18,17 @@ body {
 h1,
 h2,
 h3 {
-    margin: 0;
     font-weight: 400;
+    margin: 0;
 
     &.lg-heading {
         font-size: 6rem;
     }
 
     &.sm-heading {
+        background: rgba(lighten($primary-color, 2), 0.5);
         margin-bottom: 1rem;
         padding: 0.2rem 1rem;
-        background: rgba(lighten($primary-color, 2), 0.5);
     }
 }
 
@@ -99,7 +99,7 @@ main {
     }
 
     .bio {
-        font-size: 1rem; 
+        font-size: 1rem;
         text-align: left;
 
         .bio-intro {
