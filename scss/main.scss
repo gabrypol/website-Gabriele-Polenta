@@ -145,7 +145,7 @@ main {
 .projects {
     column-gap: 30px;
 
-    .item {
+    &__item {
 
         display: inline-block;
         margin-bottom: 30px;
