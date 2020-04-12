@@ -17,6 +17,14 @@
 // Medium screens
 @include mediaMedium {
 
+    h1,
+    h2,
+    h3 {
+        &.sm-heading {
+            margin-bottom: 30px;
+        }
+    }
+
     main {
         align-items: center;
         padding: 3rem;
@@ -59,8 +67,9 @@
 
     .about-info {
         grid-template-areas:
-            'bioimage'
-            'bio'
+            'bioImage'
+            'bioIntro'
+            'bioSkills'
             'job1'
             'job2'
             'job3';
@@ -100,7 +109,6 @@
 
         &.sm-heading {
             font-size: 1.5rem;
-            margin-bottom: 30px;
         }
 
     }
@@ -145,6 +153,20 @@
         &.lg-heading {
             font-size: 4rem;
         }
+
+        &.sm-heading {
+            margin-bottom: 30px;
+        }
+    }
+
+    .about-info {
+        grid-template-areas:
+            'bioImage'
+            'bioIntro'
+            'bioSkills'
+            'job1'
+            'job2'
+            'job3';
     }
 
     .menu {
