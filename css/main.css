@@ -144,6 +144,9 @@ header {
 .text-secondary {
   color: #479761; }
 
+.text-italic {
+  font-style: italic; }
+
 main {
   padding: 4rem;
   min-height: calc(100vh - 60px); }
@@ -162,26 +165,28 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  grid-template-areas: 'bioImage bioIntro bioSkills' 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
-    grid-area: bioimage;
-    margin: auto;
+    border: #479761 3px solid;
     border-radius: 50%;
-    border: #479761 3px solid; }
+    grid-area: bioImage;
+    margin: auto; }
   .about-info .bio {
-    grid-area: bio;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: left; }
+    .about-info .bio .bio-intro {
+      grid-area: bioIntro; }
+    .about-info .bio .bio-skills {
+      grid-area: bioSkills; }
+  .about-info .job {
+    font-size: 1rem; }
   .about-info .job-1 {
-    grid-area: job1;
-    font-size: 1rem; }
+    grid-area: job1; }
   .about-info .job-2 {
-    grid-area: job2;
-    font-size: 1rem; }
+    grid-area: job2; }
   .about-info .job-3 {
-    grid-area: job3;
-    font-size: 1rem; }
+    grid-area: job3; }
   .about-info .job {
     background: #262427;
     padding: 0.9rem;
@@ -250,7 +255,7 @@ main {
 
 @media screen and (min-width: 1171px) {
   .projects {
-    column-count: 3; } }
+    column-count: 4; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
