@@ -264,8 +264,8 @@ main {
 @media screen and (max-width: 768px) {
   main {
     align-items: center;
-    text-align: center;
-    padding: 3rem; }
+    padding: 3rem;
+    text-align: center; }
     main .lg-heading {
       line-height: 1;
       margin-bottom: 1rem; }
@@ -300,7 +300,7 @@ main {
     right: 20px;
     top: 20px; }
   main {
-    padding: 2rem; }
+    padding: 2rem 1rem 0rem 1rem; }
   main #home h1 {
     margin-top: 10vh; }
   h1,
@@ -315,15 +315,16 @@ main {
     h1.sm-heading,
     h2.sm-heading,
     h3.sm-heading {
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      margin-bottom: 30px; }
   .about-info {
     display: flex;
     flex-direction: column; }
     .about-info .bio-image {
       border: #479761 3px solid;
       border-radius: 50%;
-      margin-bottom: 30px;
       height: 200px;
+      margin-bottom: 30px;
       width: 200px; }
     .about-info .bio,
     .about-info .job {
