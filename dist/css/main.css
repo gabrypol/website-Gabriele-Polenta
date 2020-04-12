@@ -340,7 +340,7 @@ main {
 
 @media screen and (max-height: 500px) {
   main {
-    padding: 2rem 1rem 0rem 1rem; }
+    padding: 1rem 1rem 0rem 1rem; }
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {

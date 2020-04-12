@@ -148,7 +148,16 @@
 @include mediaLandscape {
 
     main {
-        padding: 2rem 1rem 0rem 1rem;
+        padding: 1rem 1rem 0rem 1rem;
+
+        // &#home {
+        //     // Don't allow scrolling
+        //     // overflow: hidden;
+
+        //     h1 {
+        //         margin-top: 15vh;
+        //     }
+        // }
     }
 
     h1,
