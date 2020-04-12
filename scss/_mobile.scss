@@ -147,6 +147,10 @@
 // Media landscape
 @include mediaLandscape {
 
+    main {
+        padding: 2rem 1rem 0rem 1rem;
+    }
+
     h1,
     h2,
     h3 {
