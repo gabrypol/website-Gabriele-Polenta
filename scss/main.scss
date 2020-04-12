@@ -49,6 +49,10 @@ header {
     color: $secondary-color;
 }
 
+.text-italic {
+    font-style: italic;
+}
+
 main {
     padding: 4rem;
     // The footer has to stick to the bottom of the page, regardless of the amount of content on the page
@@ -72,7 +76,7 @@ main {
 
             &:hover {
                 color: $secondary-color;
-                // Use here the previously defined mixin 'easeOut' 
+                // Use here the previously defined mixin 'easeOut'
                 @include easeOut;
             }
         }
@@ -83,37 +87,45 @@ main {
     display: grid;
     grid-gap: 30px;
     grid-template-areas:
-        'bioimage bio bio'
+        'bioImage bioIntro bioSkills'
         'job1 job2 job3';
     grid-template-columns: repeat(3, 1fr);
-    
 
     .bio-image {
-        grid-area: bioimage;
-        margin: auto;
-        border-radius: 50%;
         border: $secondary-color 3px solid;
+        border-radius: 50%;
+        grid-area: bioImage;
+        margin: auto;
     }
 
     .bio {
-        grid-area: bio;
-        font-size: 1.5rem;
+        font-size: 1rem; 
         text-align: left;
+
+        .bio-intro {
+            grid-area: bioIntro;
+        }
+
+        .bio-skills {
+            grid-area: bioSkills;
+        }
+
     }
-    
+
+    .job {
+        font-size: 1rem;
+    }
+
     .job-1 {
         grid-area: job1;
-        font-size: 1rem;
     }
 
     .job-2 {
         grid-area: job2;
-        font-size: 1rem;
     }
 
     .job-3 {
         grid-area: job3;
-        font-size: 1rem;
     }
 
     .job {
