@@ -119,8 +119,8 @@ body {
 h1,
 h2,
 h3 {
-  margin: 0;
-  font-weight: 400; }
+  font-weight: 400;
+  margin: 0; }
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
@@ -128,9 +128,9 @@ h3 {
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
+    background: rgba(30, 29, 31, 0.5);
     margin-bottom: 1rem;
-    padding: 0.2rem 1rem;
-    background: rgba(30, 29, 31, 0.5); }
+    padding: 0.2rem 1rem; }
 
 a {
   color: #fff;
@@ -262,10 +262,14 @@ main {
     column-count: 3; } }
 
 @media screen and (max-width: 768px) {
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading {
+    margin-bottom: 30px; }
   main {
     align-items: center;
-    text-align: center;
-    padding: 3rem; }
+    padding: 3rem;
+    text-align: center; }
     main .lg-heading {
       line-height: 1;
       margin-bottom: 1rem; }
@@ -290,7 +294,7 @@ main {
     transform: translate3d(-100%, 0, 0);
     font-size: 24px; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-areas: 'bioImage' 'bioIntro' 'bioSkills' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .projects {
     column-count: 2; } }
@@ -300,7 +304,7 @@ main {
     right: 20px;
     top: 20px; }
   main {
-    padding: 2rem; }
+    padding: 2rem 1rem 0rem 1rem; }
   main #home h1 {
     margin-top: 10vh; }
   h1,
@@ -322,8 +326,8 @@ main {
     .about-info .bio-image {
       border: #479761 3px solid;
       border-radius: 50%;
-      margin-bottom: 30px;
       height: 200px;
+      margin-bottom: 30px;
       width: 200px; }
     .about-info .bio,
     .about-info .job {
@@ -339,6 +343,12 @@ main {
   h2.lg-heading,
   h3.lg-heading {
     font-size: 4rem; }
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading {
+    margin-bottom: 30px; }
+  .about-info {
+    grid-template-areas: 'bioImage' 'bioIntro' 'bioSkills' 'job1' 'job2' 'job3'; }
   .menu {
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
