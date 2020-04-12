@@ -231,7 +231,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 1rem; }
+  margin-top: 5rem; }
   .boxes div {
     font-size: 2rem;
     border: 3px #fff solid;
@@ -336,7 +336,12 @@ main {
     column-count: 1; }
   .boxes div {
     font-size: 1.2rem;
-    padding: 0.5rem 0.5rem; } }
+    padding: 0.5rem 0.5rem; }
+  .boxes {
+    margin-top: 50px; }
+    .boxes div {
+      font-size: 1.25rem;
+      padding: 0.5rem 0.5rem; } }
 
 @media screen and (max-height: 500px) {
   main {
@@ -353,10 +358,12 @@ main {
     margin-bottom: 30px; }
   .about-info {
     grid-template-areas: 'bioImage' 'bioIntro' 'bioSkills' 'job1' 'job2' 'job3'; }
-  .boxes div {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
-    padding: 1rem 2rem; }
+  .boxes {
+    margin-top: 30px; }
+    .boxes div {
+      font-size: 1.25rem;
+      margin-bottom: 20px;
+      padding: 1rem 2rem; }
   .menu {
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
