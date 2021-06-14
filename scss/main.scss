@@ -93,8 +93,10 @@ main {
     grid-gap: 30px;
     grid-template-areas:
         'bioImage bioSkills bioIntro bioIntro'
-        'job0 job0 job1 job1'
-        'job2 job2 job3 job3';
+        'bioEdu bioEdu job0 job0'
+        '. . job1 job1'
+        '. . job2 job2'
+        '. . job3 job3';
     grid-template-columns: repeat(4, 1fr);
 
     .bio-image {
@@ -114,6 +116,10 @@ main {
 
         &.bio-skills {
             grid-area: bioSkills;
+        }
+
+        &.bio-edu {
+          grid-area: bioEdu;
         }
 
     }
