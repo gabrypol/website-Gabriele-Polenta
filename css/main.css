@@ -58,14 +58,14 @@
       background: url("../img/portrait.jpg");
       background-size: cover;
       border-radius: 50%;
-      border: solid 3px #479761; }
+      border: solid 3px #FF0000; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #479761; }
+      color: #FF0000; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -77,7 +77,7 @@
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #479761; }
+      color: #FF0000; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -133,8 +133,10 @@ h3 {
     padding: 0.2rem 1rem; }
 
 a {
-  color: #fff;
-  text-decoration: none; }
+  color: #fff; }
+  a:hover {
+    color: #FF0000;
+    transition: all 0.5s ease-out; }
 
 header {
   position: fixed;
@@ -142,7 +144,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #479761; }
+  color: #FF0000; }
 
 .text-italic {
   font-style: italic; }
@@ -155,32 +157,37 @@ main {
     main#home h1 {
       margin-top: 20vh; }
   main .icons {
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    padding-left: 0.7rem; }
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #479761;
+        color: #FF0000;
         transition: all 0.5s ease-out; }
 
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bioImage bioIntro bioSkills' 'job1 job2 job3';
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-areas: 'bioImage bioSkills bioIntro bioIntro' 'bioEdu bioEdu job0 job0' '. . job1 job1' '. . job2 job2' '. . job3 job3';
+  grid-template-columns: repeat(4, 1fr); }
   .about-info .bio-image {
-    border: #479761 3px solid;
+    border: #FF0000 3px solid;
     border-radius: 50%;
     grid-area: bioImage;
     margin: auto; }
   .about-info .bio {
     font-size: 1rem;
     text-align: left; }
-    .about-info .bio .bio-intro {
+    .about-info .bio.bio-intro {
       grid-area: bioIntro; }
-    .about-info .bio .bio-skills {
+    .about-info .bio.bio-skills {
       grid-area: bioSkills; }
+    .about-info .bio.bio-edu {
+      grid-area: bioEdu; }
   .about-info .job {
     font-size: 1rem; }
+  .about-info .job-0 {
+    grid-area: job0; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
@@ -190,7 +197,7 @@ main {
   .about-info .job {
     background: #262427;
     padding: 0.9rem;
-    border-bottom: #479761 5px solid;
+    border-bottom: #FF0000 5px solid;
     text-align: left; }
     .about-info .job h1, .about-info .job h2, .about-info .job h3, .about-info .job h4, .about-info .job h5, .about-info .job h6 {
       font-weight: 600;
@@ -207,7 +214,7 @@ main {
       border: 3px #fff solid; }
       .projects__item img:hover {
         opacity: 0.5;
-        border-color: #479761;
+        border-color: #FF0000;
         transition: all 0.5s ease-out; }
 
 .btn, .btn-dark, .btn-light {
@@ -215,7 +222,7 @@ main {
   padding: 0.5rem 1rem;
   border: 0; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #479761;
+    background: #FF0000;
     color: #000; }
 
 .btn-dark {
@@ -238,13 +245,6 @@ main {
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
     transition: all 0.5s ease-out; }
-    .boxes div:hover {
-      padding: 0.5rem 1.5rem;
-      background: #479761;
-      color: #000; }
-      .boxes div:hover span,
-      .boxes div:hover a {
-        color: #000; }
 
 #main-footer {
   text-align: center;
@@ -294,7 +294,7 @@ main {
     transform: translate3d(-100%, 0, 0);
     font-size: 24px; }
   .about-info {
-    grid-template-areas: 'bioImage' 'bioIntro' 'bioSkills' 'job1' 'job2' 'job3';
+    grid-template-areas: 'bioImage' 'bioSkills' 'bioIntro' 'bioEdu' 'job0' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .projects {
     column-count: 2; } }
@@ -324,7 +324,7 @@ main {
     display: flex;
     flex-direction: column; }
     .about-info .bio-image {
-      border: #479761 3px solid;
+      border: #FF0000 3px solid;
       border-radius: 50%;
       height: 200px;
       margin-bottom: 30px;
@@ -357,7 +357,7 @@ main {
   h3.sm-heading {
     margin-bottom: 30px; }
   .about-info {
-    grid-template-areas: 'bioImage' 'bioIntro' 'bioSkills' 'job1' 'job2' 'job3'; }
+    grid-template-areas: 'bioImage' 'bioSkills' 'bioIntro' 'bioEdu' 'job0' 'job1' 'job2' 'job3'; }
   .boxes {
     margin-top: 30px; }
     .boxes div {
