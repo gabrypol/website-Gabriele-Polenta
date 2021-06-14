@@ -9,7 +9,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #000;
+    background: #fff;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
@@ -40,14 +40,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #f2f2f2;
+    background: #0c0c0d;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-portrait {
-    background: #fff;
+    background: #19181a;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-portrait.show {
@@ -73,7 +73,7 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: #000;
+    color: #fff;
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
@@ -95,8 +95,8 @@
   box-sizing: border-box; }
 
 body {
-  background: #fff;
-  color: #000;
+  background: #19181a;
+  color: #fff;
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -114,7 +114,7 @@ body {
       width: 100%;
       height: 100vh;
       z-index: -1;
-      background-color: rgba(255, 255, 255, 0.9); }
+      background-color: rgba(25, 24, 26, 0.9); }
 
 h1,
 h2,
@@ -128,12 +128,12 @@ h3 {
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(30, 29, 31, 0.5);
     margin-bottom: 1rem;
     padding: 0.2rem 1rem; }
 
 a {
-  color: #000; }
+  color: #fff; }
   a:hover {
     color: #FF0000;
     transition: all 0.5s ease-out; }
@@ -157,7 +157,8 @@ main {
     main#home h1 {
       margin-top: 20vh; }
   main .icons {
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    padding-left: 0.7rem; }
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
@@ -167,8 +168,8 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bioImage bioIntro bioSkills' 'job1 job2 job3';
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-areas: 'bioImage bioSkills bioIntro bioIntro' 'job0 job0 job1 job1' 'job2 job2 job3 job3';
+  grid-template-columns: repeat(4, 1fr); }
   .about-info .bio-image {
     border: #FF0000 3px solid;
     border-radius: 50%;
@@ -177,12 +178,14 @@ main {
   .about-info .bio {
     font-size: 1rem;
     text-align: left; }
-    .about-info .bio .bio-intro {
+    .about-info .bio.bio-intro {
       grid-area: bioIntro; }
-    .about-info .bio .bio-skills {
+    .about-info .bio.bio-skills {
       grid-area: bioSkills; }
   .about-info .job {
     font-size: 1rem; }
+  .about-info .job-0 {
+    grid-area: job0; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
@@ -190,7 +193,7 @@ main {
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
-    background: white;
+    background: #262427;
     padding: 0.9rem;
     border-bottom: #FF0000 5px solid;
     text-align: left; }
@@ -221,11 +224,11 @@ main {
     color: #000; }
 
 .btn-dark {
-  background: gray;
+  background: black;
   color: #fff; }
 
 .btn-light {
-  background: white;
+  background: #99949d;
   color: #333; }
 
 .boxes {
@@ -244,8 +247,8 @@ main {
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #e6e6e6;
-  color: #000;
+  background: black;
+  color: #fff;
   height: 60px; }
 
 @media screen and (min-width: 1171px) {
@@ -289,7 +292,7 @@ main {
     transform: translate3d(-100%, 0, 0);
     font-size: 24px; }
   .about-info {
-    grid-template-areas: 'bioImage' 'bioIntro' 'bioSkills' 'job1' 'job2' 'job3';
+    grid-template-areas: 'bioImage' 'bioSkills' 'bioIntro' 'job0' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .projects {
     column-count: 2; } }
@@ -352,7 +355,7 @@ main {
   h3.sm-heading {
     margin-bottom: 30px; }
   .about-info {
-    grid-template-areas: 'bioImage' 'bioIntro' 'bioSkills' 'job1' 'job2' 'job3'; }
+    grid-template-areas: 'bioImage' 'bioSkills' 'bioIntro' 'job0' 'job1' 'job2' 'job3'; }
   .boxes {
     margin-top: 30px; }
     .boxes div {
